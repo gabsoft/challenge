@@ -1,0 +1,192 @@
+nav {
+  box-shadow: 0 0 12.4px 0.7px rgba(0, 0, 0, 0.13);
+  background-color: #ffffff;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+}
+.logo-menu {
+  margin-left: 2%;
+}
+/* 
+.logo-menu, .products-menu>li, .user-menu>li {
+  cursor: pointer;
+} */
+.products-menu, .user-menu {
+  display: flex;
+}
+
+.products-menu { 
+  font-family: 'Montserrat', sans-serif;
+  line-height: 65px;
+}
+
+.products-menu > li {
+  padding-right: 15px;
+}
+
+.user-menu > li{
+  padding-right: 65px;
+}
+
+.user-menu {
+  line-height: 75px;
+  position: relative;
+}
+.user-menu ul {
+  position: absolute;
+  left: -99999px;
+  width: 100%;
+  height: 459px;
+  opacity: 0.9;
+  box-shadow: -1.7px 1px 5px 0.1px rgba(0, 0, 0, 0.14);
+  background-color: #eeeeee;
+}
+
+.user-menu ul li {
+  padding-top: 1px;
+}
+
+.user-menu li:hover ul {
+  left: 0;
+}
+
+.resumo-pedido {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+}
+.resumo-pedido div:first-child {
+  text-align: center;
+  background-color: #e5e5e5;
+  height: 67px;
+  font-size: 16.5px;
+  color: #565656
+}
+.resumo-pedido div:first-child p{
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  line-height: 67px;
+}
+
+.resumo-pedido div:first-child p>span {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: bold;
+}
+
+.resumo-pedido div:last-child {
+  text-align: center;
+  background-color: #00bb16;
+  height: 57px;
+}
+.resumo-pedido div:last-child p {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 57px;
+  color: #ffffff;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: bold;
+}
+
+.produtos ul {
+  height: 343px;
+  max-height: 343px;
+  overflow-y: scroll;
+}
+.produtos ul>li {
+  height: 121px;
+  border-bottom: solid 1px #e5e5e5 
+}
+
+.produto-imagem {
+  float: left;
+  height: 121px;
+  width: 25%;
+}
+
+.produto-imagem img {
+  width: 82px;
+  height: 80px;
+  padding-top: 21px;
+  padding-bottom: 15px;
+}
+
+.produto-nome {
+  float: right;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: pre;
+  width: 63%;
+  height: 40%;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.produto-qnt-valor {
+  float: right;
+  width: 63%;
+  height: 50%;
+  text-align: left;
+  font-size: 13px;
+}
+
+.produto-qnt-valor span:first-child {
+  margin-right: 25px;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: 500;
+  color:#333333
+}
+
+.produto-qnt-valor span:last-child {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: bold;
+  color:#00bb16
+}
+
+.produtos-list {
+  margin-left: -30px;
+}
+
+.black {
+  color: black
+}
+
+@media only screen and (max-width: 768px) {
+  nav > ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .products-menu, .user-menu {
+    flex-direction: column;
+  }
+  .logo-menu{
+    text-align: center;
+  }
+  .products-menu, .user-menu {
+    text-align: center;
+  }
+
+  .products-menu > li, .user-menu > li {
+    padding-right: 0;
+    margin-bottom: 1px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+  }
+
+  .products-menu > li:hover , .user-menu > li:hover {
+    background-color: rgba(51, 51, 51, 0.2)
+  }
+
+  .produtos-list {
+    margin-top: 2px;
+  }
+  
+
+  
+}
