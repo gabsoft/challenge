@@ -1,0 +1,33 @@
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+}
+.logo-menu {
+  margin-left: 2%;
+}
+
+.logo-menu, .products-menu>li, .user-menu>li {
+  cursor: pointer;
+}
+.products-menu, .user-menu {
+  display: flex;
+}
+
+.products-menu { 
+  font-family: 'Montserrat', sans-serif;
+  line-height: 65px;
+}
+
+.products-menu > li {
+  padding-right: 15px;
+}
+
+.user-menu > li{
+  padding-right: 65px;
+}
+
+.user-menu {
+  line-height: 75px;
+}
